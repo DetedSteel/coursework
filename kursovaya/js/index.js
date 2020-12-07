@@ -7,89 +7,142 @@ $(document).ready(function(){
         $(obj).mouseup(function(){
             $(obj).removeClass('dark_purple_text')
         })
+
+        $(obj).mouseleave(function(){
+            $(obj).removeClass('dark_purple_text')
+        })
     }
 
     function dark_purple(obj) {
+        $(obj).mousedown(function(){
+            $(obj).removeClass('dropdown').addClass('dropdown2')
+        })
 
+        $(obj).mouseup(function(){
+            $(obj).removeClass('dropdown2').addClass('dropdown')
+        })
+
+        $(obj).mouseleave(function(){
+            $(obj).removeClass('dropdown2').addClass('dropdown')
+        })
     }
 
-    $('#nav_item_about_us').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_about_us')
-    })
-
-    $('#nav_item_gallery').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_gallery')
-    })
-
-    $('#nav_item_catalog').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_catalog')
-    })
-
-    $('#nav_item_events').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_events')
-    })
-
-    $('#nav_item_editions').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_editions')
-    })
-
-    $('#nav_item_projects').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_projects')
-    })
-
-    $('#nav_item_contacts').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_contacts')
-    })
-
-    $('#nav_item_realism').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_realism')
-
-        $('#nav_item_realism').mousedown(function(){
-            $('.dropdown').removeClass('dropdown').addClass('dropdown2')
+    function dark_purple_background(obj) {
+        $(obj).mousedown(function(){
+            $(obj).addClass('dark_purple_background')
         })
 
-        $('#nav_item_realism').mouseup(function(){
-            $('.dropdown2').removeClass('dropdown2').addClass('dropdown')
+        $(obj).mouseup(function(){
+            $(obj).removeClass('dark_purple_background')
         })
+    }
+
+    $('a').click(function(e){
+        e.preventDefault();
     })
 
-    $('#nav_item_impressionism').click(function(e){
-        e.preventDefault();
+    dark_purple_text('#nav_item_about_us')
 
-        dark_purple_text('#nav_item_impressionism')
+    dark_purple_text('#nav_item_gallery')
+
+    dark_purple_text('#nav_item_catalog')
+
+    dark_purple_text('#nav_item_events')
+
+    dark_purple_text('#nav_item_editions')
+
+    dark_purple_text('#nav_item_projects')
+
+    dark_purple_text('#nav_item_contacts')
+
+    dark_purple_text('#nav_item_realism')
+
+    dark_purple('#nav_item_realism')
+
+    dark_purple_text('#nav_item_impressionism')
+
+    dark_purple('#nav_item_impressionism')
+    
+    dark_purple_text('#nav_item_post-impressionism')
+
+    dark_purple('#nav_item_post-impressionism')
+    
+    dark_purple_text('#nav_item_vanguard')
+
+    dark_purple('#nav_item_vanguard')
+   
+    dark_purple_text('#nav_item_futurism')
+
+    dark_purple('#nav_item_futurism')
+
+    $('#nav_item_realism').mouseenter(function(){
+        $('#nav_item_realism').addClass('dropdown3')
     })
 
-    $('#nav_item_post-impressionism').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_post-impressionism')
+    $('#nav_item_realism').mouseleave(function(){
+        $('#nav_item_realism').removeClass('dropdown3')
     })
 
-    $('#nav_item_vanguard').click(function(e){
-        e.preventDefault();
-
-        dark_purple_text('#nav_item_vanguard')
+    $('#nav_item_impressionism').mouseenter(function(){
+        $('#nav_item_impressionism').addClass('dropdown3')
     })
 
-    $('#nav_item_futurism').click(function(e){
-        e.preventDefault();
+    $('#nav_item_impressionism').mouseleave(function(){
+        $('#nav_item_impressionism').removeClass('dropdown3')
+    })
 
-        dark_purple_text('#nav_item_futurism')
+    $('#nav_item_post-impressionism').mouseenter(function(){
+        $('#nav_item_post-impressionism').addClass('dropdown3')
+    })
+
+    $('#nav_item_post-impressionism').mouseleave(function(){
+        $('#nav_item_post-impressionism').removeClass('dropdown3')
+    })
+
+    $('#nav_item_vanguard').mouseenter(function(){
+        $('#nav_item_vanguard').addClass('dropdown3')
+    })
+
+    $('#nav_item_vanguard').mouseleave(function(){
+        $('#nav_item_vanguard').removeClass('dropdown3')
+    })
+
+    $('#nav_item_futurism').mouseenter(function(){
+        $('#nav_item_futurism').addClass('dropdown3')
+    })
+
+    $('#nav_item_futurism').mouseleave(function(){
+        $('#nav_item_futurism').removeClass('dropdown3')
+    })
+
+    dark_purple_background('#btn_1')
+
+    $('#login').mousedown(function(){
+        $('#login').addClass('purple_text')
+        $('#login').addClass('login_dark_img')
+    })
+
+    $('#login').mouseup(function(){
+        $('#login').removeClass('purple_text')
+        $('#login').removeClass('login_dark_img')
+    })
+
+    $('#login').mouseleave(function(){
+        $('#login').removeClass('purple_text')
+        $('#login').removeClass('login_dark_img')
+    })
+
+    $('#search').mouseenter(function(){
+        $('.search_input').addClass('search_input_purple')
+        $('.search_btn').addClass('search_btn_purple')
+    })
+
+    $('.search_input').focus(function(){
+        $('#search').addClass('outline')
+    })
+
+    $('#search').mouseleave(function(){
+        $('.search_input').removeClass('search_input_purple')
+        $('.search_btn').removeClass('search_btn_purple')
     })
 })
