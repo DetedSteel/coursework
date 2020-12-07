@@ -137,8 +137,12 @@ $(document).ready(function(){
         $('.search_btn').addClass('search_btn_purple')
     })
 
-    $('.search_input').focus(function(){
+    $('.search_input').focusin(function(){
         $('#search').addClass('outline')
+    })
+
+    $('.search_input').focusout(function(){
+        $('#search').removeClass('outline')
     })
 
     $('#search').mouseleave(function(){
