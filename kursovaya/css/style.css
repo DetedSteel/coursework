@@ -125,7 +125,7 @@ a {
     color: var(--dark_purple) !important;
 }
 
-.header_top_transition {
+.header_transition {
     transition: color 0.3s ease-in-out;
 }
 
@@ -157,9 +157,7 @@ a {
     margin-right: auto;
 }
 
-.dropdown {
-    transition: color 0.3s ease-in-out;
-}
+
 
 .dropdown a {
     padding-right: 20px;
