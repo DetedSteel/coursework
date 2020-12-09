@@ -17,25 +17,25 @@
                 <nav class="nav">
                     <ul class="flex_container nav_cont">
                         <li class="nav_item">
-                            <a id="nav_item_about_us" href="">О нас</a>
+                            <a id="nav_item_about_us" class="header_top_transition" href="">О нас</a>
                         </li>
                         <li class="nav_item">
-                            <a id="nav_item_gallery" href="">Галерея</a>
+                            <a id="nav_item_gallery" class="header_top_transition" href="">Галерея</a>
                         </li>
                         <li class="nav_item">
-                            <a id="nav_item_catalog" href="">Каталог</a>
+                            <a id="nav_item_catalog" class="header_top_transition" href="">Каталог</a>
                         </li>
                         <li class="nav_item">
-                            <a id="nav_item_events" href="">События</a>
+                            <a id="nav_item_events" class="header_top_transition" href="">События</a>
                         </li>
                         <li class="nav_item">
-                            <a id="nav_item_editions" href="">Издания</a>
+                            <a id="nav_item_editions" class="header_top_transition" href="">Издания</a>
                         </li>
                         <li class="nav_item">
-                            <a id="nav_item_projects" href="">Проекты</a>
+                            <a id="nav_item_projects" class="header_top_transition" href="">Проекты</a>
                         </li>
                         <li class="nav_item">
-                            <a id="nav_item_contacts" href="">Контакты</a>
+                            <a id="nav_item_contacts" class="header_top_transition" href="">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -61,27 +61,23 @@
                         <a href="">Футуризм</a>
                     </li>
                 </ul>
-                <div id="search" class="search">
-                    <form action="">
-                        <div class="flex_container flex_reverse">
-                            <input class="search_input outline_none" type="text" placeholder="Поиск по сайту">
-                            <button class="search_btn outline_none" type="submit">
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                <form class="search flex_container flex_reverse" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
+                    <input class="search_input outline_none" type="text" placeholder="Поиск по сайту">
+                    <button class="search_btn outline_none" type="submit">
+                    </button>
+                </form>
             </div>
         </div>
     </header>
     <main>
-        <section>
+        <section class="section_title">
             <div class="container">
-                <div class="section_1">
-                    <h1 class="h1">Прикоснитесь к прекрасному</h1>
-                    <span class="section_1_text">
+                <div class="section_title__content">
+                    <h1 class="main_title">Прикоснитесь к прекрасному</h1>
+                    <p class="section_title__text">
                         Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-                    </span>
-                    <button id="btn_1" class="btn">Подписаться на расслку</button>
+                    </p>
+                    <button id="btn_subscribe" class="btn">Подписаться на расслку</button>
                 </div>
             </div>
         </section>

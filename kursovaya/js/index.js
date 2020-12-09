@@ -115,7 +115,7 @@ $(document).ready(function(){
         $('#nav_item_futurism').removeClass('dropdown3')
     })
 
-    dark_purple_background('#btn_1')
+    dark_purple_background('#btn_subscribe')
 
     $('#login').mousedown(function(){
         $('#login').addClass('purple_text')
