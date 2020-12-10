@@ -149,4 +149,12 @@ $(document).ready(function(){
         $('.search_input').removeClass('search_input_purple')
         $('.search_btn').removeClass('search_btn_purple')
     })
+
+    $('#nav_item_realism').mousedown(function(){
+        $('#dropdown_menu_realism').addClass('dropdown_menu_active')
+    })
+
+    $('.dropdown_menu').mouseleave(function(){
+        $('#dropdown_menu_realism').removeClass('dropdown_menu_active')
+    })
 })

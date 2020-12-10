@@ -135,6 +135,7 @@ p {
 }
 
 .header_transition {
+    display: flex;
     transition: color 0.3s ease-in-out;
 }
 
@@ -162,18 +163,7 @@ p {
     font-weight: 400;
     align-self: center;
     margin-right: auto;
-}
-
-.dropdown a {
-    padding-right: 20px;
-}
-
-.dropdown2 a {
-    padding-right: 20px;
-}
-
-.dropdown3 a {
-    padding-right: 20px;
+    position: relative;
 }
 
 .dropdown:hover {
@@ -184,27 +174,84 @@ p {
     margin-right: 101px;
 }
 
-.dropdown::after, .dropdown2::after, .dropdown3::after{
+.dropdown .header_transition::after, .dropdown2 .header_transition::after, .dropdown3 .header_transition::after{
     content: "";
     width: 7px;
     height: 7px;
-    margin-left: -16px;
     align-self: center;
+    margin-left: 5px;
     border-bottom: 1px solid white;
     border-right: 1px solid white;
     transform: rotate(45deg);
     transition: all 0.3s ease-in-out;
 }
 
-.dropdown3::after {
+.dropdown3 .header_transition::after {
     border-bottom: 1px solid var(--light_purple);
     border-right: 1px solid var(--light_purple);
 }
 
-.dropdown2::after {
+.dropdown2 .header_transition::after {
     border-bottom: 1px solid var(--dark_purple);
     border-right: 1px solid var(--dark_purple);
     transform: rotate(-135deg);
+}
+
+.dropdown_menu {
+    top: 50px;
+    position: absolute;
+    padding: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown_item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.dropdown_item {
+    padding-right: 124px;
+}
+
+.fridrih {
+    background-image: url(../img/Rectangle_58.jpg);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+}
+
+.tintoretto {
+    background-image: url(../img/Rectangle_57.png);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+}
+
+.leonardo {
+    background-image: url(../img/Rectangle_59.png);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+}
+
+.verrokko {
+    background-image: url(../img/Rectangle_60.png);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+}
+
+.dropdown_menu_active {
+    display: block;
 }
 
 .search {
