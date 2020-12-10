@@ -138,11 +138,11 @@ $(document).ready(function(){
     })
 
     $('.search_input').focusin(function(){
-        $('#search').addClass('outline')
+        $('.search').addClass('outline')
     })
 
     $('.search_input').focusout(function(){
-        $('#search').removeClass('outline')
+        $('.search').removeClass('outline')
     })
 
     $('#search').mouseleave(function(){

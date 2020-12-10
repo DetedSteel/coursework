@@ -212,6 +212,10 @@ p {
     margin-left: auto;
 }
 
+.search:hover {
+    outline: none;
+}
+
 .search_input {
     margin-top: 7px;
     padding-top: 8px;
