@@ -1,5 +1,11 @@
 $(document).ready(function(){
     function dark_purple_text(obj) {
+        $(obj).click(function(){
+            $(obj).toggleClass('dark_purple_text')
+        })
+    }
+
+    function dark_purple_text_top(obj) {
         $(obj).mousedown(function(){
             $(obj).addClass('dark_purple_text')
         })
@@ -7,23 +13,11 @@ $(document).ready(function(){
         $(obj).mouseup(function(){
             $(obj).removeClass('dark_purple_text')
         })
-
-        $(obj).mouseleave(function(){
-            $(obj).removeClass('dark_purple_text')
-        })
     }
 
     function dark_purple(obj) {
-        $(obj).mousedown(function(){
-            $(obj).removeClass('dropdown').addClass('dropdown2')
-        })
-
-        $(obj).mouseup(function(){
-            $(obj).removeClass('dropdown2').addClass('dropdown')
-        })
-
-        $(obj).mouseleave(function(){
-            $(obj).removeClass('dropdown2').addClass('dropdown')
+        $(obj).click(function(){
+            $(obj).toggleClass('dropdown2')
         })
     }
 
@@ -41,19 +35,19 @@ $(document).ready(function(){
         e.preventDefault();
     })
 
-    dark_purple_text('#nav_item_about_us')
+    dark_purple_text_top('#nav_item_about_us')
 
-    dark_purple_text('#nav_item_gallery')
+    dark_purple_text_top('#nav_item_gallery')
 
-    dark_purple_text('#nav_item_catalog')
+    dark_purple_text_top('#nav_item_catalog')
 
-    dark_purple_text('#nav_item_events')
+    dark_purple_text_top('#nav_item_events')
 
-    dark_purple_text('#nav_item_editions')
+    dark_purple_text_top('#nav_item_editions')
 
-    dark_purple_text('#nav_item_projects')
+    dark_purple_text_top('#nav_item_projects')
 
-    dark_purple_text('#nav_item_contacts')
+    dark_purple_text_top('#nav_item_contacts')
 
     dark_purple_text('#nav_item_realism')
 
@@ -150,11 +144,57 @@ $(document).ready(function(){
         $('.search_btn').removeClass('search_btn_purple')
     })
 
-    $('#nav_item_realism').mousedown(function(){
-        $('#dropdown_menu_realism').addClass('dropdown_menu_active')
+    $('#nav_item_realism').click(function(){
+        $('#dropdown_menu_realism').toggleClass('dropdown_menu_active')
     })
 
     $('.dropdown_menu').mouseleave(function(){
         $('#dropdown_menu_realism').removeClass('dropdown_menu_active')
+        $('#nav_item_realism').removeClass('dropdown2').addClass('dropdown')
+        $('#nav_item_realism').removeClass('dark_purple_text')
+    })
+
+    $('#nav_item_impressionism').click(function(){
+        $('#dropdown_menu_impressionism').toggleClass('dropdown_menu_active')
+    })
+
+    $('.dropdown_menu').mouseleave(function(){
+        $('#dropdown_menu_impressionism').removeClass('dropdown_menu_active')
+        $('#nav_item_impressionism').removeClass('dropdown2').addClass('dropdown')
+        $('#nav_item_impressionism').removeClass('dark_purple_text')
+    })
+
+    $('#nav_item_post-impressionism').click(function(){
+        $('#dropdown_menu_post-impressionism').toggleClass('dropdown_menu_active')
+    })
+
+    $('.dropdown_menu').mouseleave(function(){
+        $('#dropdown_menu_post-impressionism').removeClass('dropdown_menu_active')
+        $('#nav_item_post-impressionism').removeClass('dropdown2').addClass('dropdown')
+        $('#nav_item_post-impressionism').removeClass('dark_purple_text')
+    })
+
+    $('#nav_item_vanguard').click(function(){
+        $('#dropdown_menu_vanguard').toggleClass('dropdown_menu_active')
+    })
+
+    $('.dropdown_menu').mouseleave(function(){
+        $('#dropdown_menu_vanguard').removeClass('dropdown_menu_active')
+        $('#nav_item_vanguard').removeClass('dropdown2').addClass('dropdown')
+        $('#nav_item_vanguard').removeClass('dark_purple_text')
+    })
+
+    $('#nav_item_futurism').click(function(){
+        $('#dropdown_menu_futurism').toggleClass('dropdown_menu_active')
+    })
+
+    $('.dropdown_menu').mouseleave(function(){
+        $('#dropdown_menu_futurism').removeClass('dropdown_menu_active')
+        $('#nav_item_futurism').removeClass('dropdown2').addClass('dropdown')
+        $('#nav_item_futurism').removeClass('dark_purple_text')
+    })
+
+    $('#dropdown_item_tintoretto').mousedown(function(){
+        $('#dropdown_item_tintoretto_ref').addClass('background_light_purple_2');
     })
 })

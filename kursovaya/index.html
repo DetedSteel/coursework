@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <title>Blanchard</title>
 </head>
 <body>
@@ -47,32 +49,158 @@
                 <ul class="dropdowns flex_container">
                     <li id="nav_item_realism" class="dropdown">
                         <a class="header_transition" href="">Реализм</a>
-                        <ul id="dropdown_menu_realism" class="dropdown_menu">
-                            <li class="dropdown_item tintoretto">
-                                <a class="" href="">Тинторетто</a>
-                            </li>
-                            <li class="dropdown_item fridrih">
-                                <a  href="">Фридрих</a>
-                            </li>
-                            <li class="dropdown_item leonardo">
-                                <a class="" href="">Леонардо</a>
-                            </li>
-                            <li class="dropdown_item verrokko">
-                                <a class="" href="">Верроккьо</a>
-                            </li>
-                        </ul>
+                        <div id="dropdown_menu_realism" class="dropdown_menu">
+                            <div class="scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <div id="dropdown_item_tintoretto" class="dropdown_item">
+                                    <a id="dropdown_item_tintoretto_ref" class="flex_container flex_center background_light_purple" href=""><img class="dropdown_item__img" src="img/Rectangle_57.png" alt=""><span class="name">Тинторетто</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center background_light_purple" href=""><img class="dropdown_item__img" src="img/Rectangle_58.jpg" alt=""><span class="name">Фридрих</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center background_light_purple" href=""><img class="dropdown_item__img" src="img/Rectangle_59.png" alt=""><span class="name">Леонардо</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center background_light_purple" href=""><img class="dropdown_item__img" src="img/Rectangle_60.png" alt=""><span class="name">Верроккьо</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center background_light_purple" href=""><img class="dropdown_item__img" src="img/Rectangle_57.png" alt=""><span class="name">Тинторетто</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center background_light_purple" href=""><img class="dropdown_item__img" src="img/Rectangle_58.jpg" alt=""><span class="name">Фридрих</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center background_light_purple" href=""><img class="dropdown_item__img" src="img/Rectangle_59.png" alt=""><span class="name">Леонардо</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center background_light_purple" href=""><img class="dropdown_item__img" src="img/Rectangle_60.png" alt=""><span class="name">Верроккьо</span></a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li id="nav_item_impressionism" class="dropdown">
                         <a class="header_transition" href="">Импрессионизм</a>
+                        <div id="dropdown_menu_impressionism" class="dropdown_menu">
+                            <div class="scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/mone.jpg" alt=""><span class="name">Моне</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/sisley.jpg" alt=""><span class="name">Сислей</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/mane.jpg" alt=""><span class="name">Мане</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/renuar.jpg" alt=""><span class="name">Ренуар</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/mone.jpg" alt=""><span class="name">Моне</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/sisley.jpg" alt=""><span class="name">Сислей</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/mane.jpg" alt=""><span class="name">Мане</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/renuar.jpg" alt=""><span class="name">Ренуар</span></a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li id="nav_item_post-impressionism" class="dropdown">
                         <a class="header_transition" href="">Постимпрессионизм</a>
+                        <div id="dropdown_menu_post-impressionism" class="dropdown_menu">
+                            <div class="scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/vangog.jpg" alt=""><span class="name">Ван Гог</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/sezan.jpg" alt=""><span class="name">Сезанн</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/gogen.jpg" alt=""><span class="name">Гоген</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/sera.jpg" alt=""><span class="name">Сёра</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/vangog.jpg" alt=""><span class="name">Ван Гог</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/sezan.jpg" alt=""><span class="name">Сезанн</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/gogen.jpg" alt=""><span class="name">Гоген</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/sera.jpg" alt=""><span class="name">Сёра</span></a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li id="nav_item_vanguard" class="dropdown">
                         <a class="header_transition" href="">Авангард</a>
+                        <div id="dropdown_menu_vanguard" class="dropdown_menu">
+                            <div class="scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/kandinsiy.jpg" alt=""><span class="name">Кандинский</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/marinetti.jpg" alt=""><span class="name">Маринетти</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/malivich.jpg" alt=""><span class="name">Малевич</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/picasso.jpg" alt=""><span class="name">Пикассо</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/kandinsiy.jpg" alt=""><span class="name">Кандинский</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/marinetti.jpg" alt=""><span class="name">Маринетти</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/malivich.jpg" alt=""><span class="name">Малевич</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__img" src="img/picasso.jpg" alt=""><span class="name">Пикассо</span></a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li id="nav_item_futurism" class="dropdown">
                         <a class="header_transition" href="">Футуризм</a>
+                        <div id="dropdown_menu_futurism" class="dropdown_menu">
+                            <div class="scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__ref" src="img/karra.jpg" alt=""><span class="name">Карра</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__ref" src="img/pratella.jpg" alt=""><span class="name">Прателла</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__ref" src="img/severini.jpg" alt=""><span class="name">Северини</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__ref" src="img/balla.jpg" alt=""><span class="name">Балла</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__ref" src="img/karra.jpg" alt=""><span class="name">Карра</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__ref" src="img/pratella.jpg" alt=""><span class="name">Прателла</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__ref" src="img/severini.jpg" alt=""><span class="name">Северини</span></a>
+                                </div>
+                                <div class="dropdown_item">
+                                    <a class="flex_container flex_center" href=""><img class="dropdown_item__ref" src="img/balla.jpg" alt=""><span class="name">Балла</span></a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <form class="search flex_container flex_reverse" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
