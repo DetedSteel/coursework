@@ -76,7 +76,8 @@ p {
     margin-left: -4px;
     color: white;
     font-size: 72px;
-    line-height: 86px;
+    line-height: 84px;
+    font-weight: 700;
 }
 
 .outline_none {
@@ -235,10 +236,14 @@ p {
     margin-bottom: 20px;
 }
 
-.dropdown_item {
+.dropdown_item, .dropdown_item_2 {
     max-width: 224px;
     margin-right: 0;
     border: 2px solid transparent;
+}
+
+.dropdown_item_2 {
+    border: 2px solid var(--light_purple) !important;
 }
 
 .dropdown_item:hover {
@@ -255,11 +260,11 @@ p {
     padding-left: 220px;
     height: 40px;
     background-color: transparent;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .background_light_purple_2::before {
-    background-color: var(--light_purple);
+    background-color: var(--purple);
 }
 
 .name {

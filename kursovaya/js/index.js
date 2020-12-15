@@ -194,7 +194,56 @@ $(document).ready(function(){
         $('#nav_item_futurism').removeClass('dark_purple_text')
     })
 
-    $('#dropdown_item_tintoretto').mousedown(function(){
-        $('#dropdown_item_tintoretto_ref').addClass('background_light_purple_2');
-    })
+    function dropdown(obj){
+        $(obj).mousedown(function(){
+            $(obj + '_ref').addClass('background_light_purple_2');
+            $(obj).addClass('dropdown_item_2')
+        })
+    
+        $(obj).mouseup(function(){
+            $(obj + '_ref').removeClass('background_light_purple_2');
+            $(obj).removeClass('dropdown_item_2')
+        })
+    }
+
+    dropdown ('#dropdown_item_tintoretto')
+    dropdown ('#dropdown_item_fridrih')
+    dropdown ('#dropdown_item_leonardo')
+    dropdown ('#dropdown_item_verrokyo')
+    dropdown ('#dropdown_item_tintoretto_2')
+    dropdown ('#dropdown_item_fridrih_2')
+    dropdown ('#dropdown_item_leonardo_2')
+    dropdown ('#dropdown_item_verrokyo_2')
+    dropdown ('#dropdown_item_mone')
+    dropdown ('#dropdown_item_sisley')
+    dropdown ('#dropdown_item_mane')
+    dropdown ('#dropdown_item_renuar')
+    dropdown ('#dropdown_item_mone_2')
+    dropdown ('#dropdown_item_sisley_2')
+    dropdown ('#dropdown_item_mane_2')
+    dropdown ('#dropdown_item_renuar_2')
+    dropdown ('#dropdown_item_vangog')
+    dropdown ('#dropdown_item_sezann')
+    dropdown ('#dropdown_item_gogen')
+    dropdown ('#dropdown_item_sera')
+    dropdown ('#dropdown_item_vangog_2')
+    dropdown ('#dropdown_item_sezann_2')
+    dropdown ('#dropdown_item_gogen_2')
+    dropdown ('#dropdown_item_sera_2')
+    dropdown ('#dropdown_item_kandisky')
+    dropdown ('#dropdown_item_marinetty')
+    dropdown ('#dropdown_item_malevich')
+    dropdown ('#dropdown_item_picasso')
+    dropdown ('#dropdown_item_kandisky_2')
+    dropdown ('#dropdown_item_marinetty_2')
+    dropdown ('#dropdown_item_malevich_2')
+    dropdown ('#dropdown_item_picasso_2')
+    dropdown ('#dropdown_item_karra')
+    dropdown ('#dropdown_item_pratella')
+    dropdown ('#dropdown_item_severini')
+    dropdown ('#dropdown_item_balla')
+    dropdown ('#dropdown_item_karra_2')
+    dropdown ('#dropdown_item_pratella_2')
+    dropdown ('#dropdown_item_severini_2')
+    dropdown ('#dropdown_item_balla_2')
 })
